@@ -34,10 +34,12 @@ const Card = ({ cityName, shortLabel, timeZone, localTime, removeAClock }) => {
         )}
       </div>
       <time className="pt-2 pb-6 font-medium text-3xl block mt-auto">
-        {/* not correct */}
         {getCurrentTime(timeZone)}
       </time>
-      <div className="uppercase">{timeZoneAbbreviation}</div>
+      <div className="uppercase">
+        {/* should check again */}
+        {timeZoneAbbreviation}
+      </div>
       {/* bug, haven't check minute */}
       <div>{`${Math.abs(timeDiff)} ${
         timeDiff === 1 ? "hour" : timeDiff === 0 ? "" : "hours"
