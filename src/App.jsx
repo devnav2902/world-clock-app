@@ -124,7 +124,7 @@ function App() {
                 {getCurrentTime(localTime.timeZone)}
               </time>
             </div>
-            <div className="grid grid-cols-4 auto-rows-[1fr] gap-5 p-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 auto-rows-[1fr] gap-5 p-5">
               {worldClockArr.map(
                 ({ cityName, shortLabel, timeZone }, index) => (
                   <Card
